@@ -3,6 +3,9 @@
 }
 .todoForm{
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  height:50px;
   width: 100%;
   max-width: 380px;
   border-radius: 0.5rem;
@@ -10,4 +13,24 @@
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   text-align: center;
   overflow: hidden;
+}
+.inputArea{
+  display: block;
+  height:100%;
+  color: rgb(51, 51, 51);
+  padding-left: 50px;
+  font-size: medium;
+  border:1px solid transparent
+}
+.button{
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 0;
+  font-weight: 700;
+  color: var(--primary-color);
+  transition: 0.3s ease;
+  background-color: #fff;
+  border:1px solid transparent
 }

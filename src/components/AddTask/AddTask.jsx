@@ -23,8 +23,8 @@ const AddTask = ({todos,setTodos,inputText,setInputText}) => {
 
   return (
     <div className={styles.todoForm}>
-      <input data-cy="add-task-input" type="text" value={inputText} onChange={inputHandler}/>
-      <button data-cy="add-task-button" onClick={submitHandler}>+</button>
+      <input data-cy="add-task-input"className={styles.inputArea} type="text" placeholder="Add tasks ...." value={inputText} onChange={inputHandler}/>
+      <button data-cy="add-task-button"className={styles.button} onClick={submitHandler}>+</button>
     </div>
   );
 };
