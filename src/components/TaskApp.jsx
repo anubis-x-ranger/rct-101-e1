@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./taskApp.module.css";
 import tasks from "../data/tasks.json"
 import AddTask from "./AddTask/AddTask";
+import Tasks from "./Tasks/Tasks";
 
 const TaskApp = () => {
 
@@ -16,6 +17,7 @@ const TaskApp = () => {
       {/* Add Task */}
       <AddTask inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos}/>
       {/* Tasks */}
+      <Tasks todos={todos} setTodos={setTodos}/>
     </div>
   );
 };
