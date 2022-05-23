@@ -14,7 +14,7 @@ const handleCount=(value)=>{
   return (
     <div className={styles.counter}>
       <button data-cy="task-counter-increment-button" onClick={()=>handleCount(1)}>+</button>
-      <span data-cy="task-counter-value">{count}</span>
+      <span data-cy="task-counter-value" >{count}</span>
       <button data-cy="task-counter-decrement-button" onClick={()=>handleCount(-1)}>-</button>
     </div>
   );

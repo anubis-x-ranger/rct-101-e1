@@ -7,6 +7,7 @@ const Tasks = ({todos,setTodos}) => {
   return (
     <>{!todos ? <div data-cy="tasks-empty" className={styles.empty}>
     {/* Show when No Tasks are present */}
+    
   </div> :<ul data-cy="tasks" className={styles.tasks}>
         {/* Task List */}
         <Task todos={todos} setTodos={setTodos}/>
